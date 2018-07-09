@@ -56,6 +56,7 @@
         <item name="colorAccent">@color/colorTheme</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowAnimationStyle">@style/default_animation_up</item>
+        <item name="android:windowBackground">@drawable/img_transition_default</item>
     </style>
 
 

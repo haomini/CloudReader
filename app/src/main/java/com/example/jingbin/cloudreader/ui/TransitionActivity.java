@@ -13,7 +13,6 @@ import com.example.jingbin.cloudreader.MainActivity;
 import com.example.jingbin.cloudreader.R;
 import com.example.jingbin.cloudreader.app.ConstantsImageUrl;
 import com.example.jingbin.cloudreader.databinding.ActivityTransitionBinding;
-import com.example.jingbin.cloudreader.utils.CommonUtils;
 import com.example.jingbin.cloudreader.utils.PerfectClickListener;
 
 import java.lang.ref.WeakReference;
@@ -42,8 +41,6 @@ public class TransitionActivity extends AppCompatActivity {
 
     private void showImage() {
         int i = new Random().nextInt(ConstantsImageUrl.TRANSITION_URLS.length);
-        // 先显示默认图
-        mBinding.ivDefultPic.setImageDrawable(CommonUtils.getDrawable(R.drawable.img_transition_default));
         Glide.with(this)
                 .load(ConstantsImageUrl.TRANSITION_URLS[i])
                 .placeholder(R.drawable.img_transition_default)
